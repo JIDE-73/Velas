@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail, Phone } from 'lucide-react';
+import { Instagram, Facebook, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,17 +11,33 @@ const Footer = () => {
               Iluminando momentos especiales con velas artesanales únicas.
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-medium mb-4">Enlaces rápidos</h4>
             <ul className="space-y-2 text-neutral-400">
-              <li><a href="#" className="hover:text-white transition-colors">Inicio</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Galería</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Personalización</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contacto</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Inicio
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Galería
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Personalización
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Contacto
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-medium mb-4">Contacto</h4>
             <div className="space-y-2 text-neutral-400">
@@ -35,20 +51,26 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-medium mb-4">Síguenos</h4>
             <div className="flex gap-4">
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-neutral-400 hover:text-white transition-colors"
+              >
                 <Instagram size={24} />
               </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-neutral-400 hover:text-white transition-colors"
+              >
                 <Facebook size={24} />
               </a>
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-neutral-800 mt-8 pt-8 text-center text-neutral-400">
           <p>&copy; 2024 Luminara. Todos los derechos reservados.</p>
         </div>
@@ -56,5 +78,8 @@ const Footer = () => {
     </footer>
   );
 };
-
+/*
+Desarrollado por Jimenez Delgado Leonardo Sebastian
+https://github.com/JIDE-73
+*/
 export default Footer;

@@ -9,3 +9,7 @@ export default defineConfig({
     exclude: ["lucide-react"],
   },
 });
+/*
+Desarrollado por Jimenez Delgado Leonardo Sebastian
+https://github.com/JIDE-73
+*/
