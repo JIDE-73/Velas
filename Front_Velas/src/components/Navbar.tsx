@@ -14,24 +14,24 @@ function Navbar() {
         {isOpen ? <X size={28} /> : <Menu size={28} />}
 
         {isOpen && (
-          <div className="absolute top-14 left-4 bg-gray-900 text-white w-48 rounded-lg shadow-lg">
+          <div className="absolute top-14 left-4 bg-gray-400 bg-opacity-50 text-gray-800 w-48 rounded-lg shadow-lg">
             <ul className="flex flex-col space-y-4 p-4">
-              <li className="hover:bg-gray-500 rounded-md transition duration-300">
+              <li className="hover:bg-gray-500 hover:text-black rounded-md transition duration-300">
                 <Link to="/" className="block p-2">
                   Inicio
                 </Link>
               </li>
-              <li className="hover:bg-gray-500 rounded-md transition duration-300">
+              <li className="hover:bg-gray-500  hover:text-black rounded-md transition duration-300">
                 <Link to="/products" className="block p-2">
                   Productos
                 </Link>
               </li>
-              <li className="hover:bg-gray-500 rounded-md transition duration-300">
+              <li className="hover:bg-gray-500  hover:text-black rounded-md transition duration-300">
                 <Link to="/about" className="block p-2">
                   Sobre Nosotros
                 </Link>
               </li>
-              <li className="hover:bg-gray-500 rounded-md transition duration-300">
+              <li className="hover:bg-gray-500  hover:text-black rounded-md transition duration-300">
                 <Link to="/contact" className="block p-2">
                   Contacto
                 </Link>

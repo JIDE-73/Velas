@@ -12,7 +12,7 @@ const Hero = () => {
 
       <div className="relative h-full flex items-center justify-center">
         <div className="text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-playfair mb-6">
+          <h1 className="text-4xl md:text-6xl font-playfair mb-6 text-[#FFFF00] shadow-red-700">
             Velas artesanales para iluminar tus momentos
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">

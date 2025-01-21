@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-playfair text-xl mb-4">Luminara</h3>
+            <h3 className="font-playfair text-xl mb-4">Brotes de luz</h3>
             <p className="text-neutral-400">
               Iluminando momentos especiales con velas artesanales únicas.
             </p>
@@ -30,7 +30,7 @@ const Footer = () => {
             <h4 className="font-medium mb-4">Síguenos</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/brotesdluz/"
                 className="text-neutral-400 hover:text-white transition-colors"
               >
                 <Instagram size={24} />

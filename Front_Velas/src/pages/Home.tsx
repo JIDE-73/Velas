@@ -11,10 +11,10 @@ export default function Home() {
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-playfair mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair mb-6 text-[#FFFF00]">
               Iluminando momentos especiales
             </h2>
-            <p className="text-neutral-600 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               En Luminara, creamos velas únicas con ingredientes naturales,
               sostenibles y diseños hechos a mano. Cada pieza es una obra de
               arte que combina belleza y fragancia para crear ambientes
