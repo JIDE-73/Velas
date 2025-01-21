@@ -14,7 +14,7 @@ function Navbar() {
         {isOpen ? <X size={28} /> : <Menu size={28} />}
 
         {isOpen && (
-          <div className="absolute top-14 left-4 bg-gray-400 bg-opacity-50 text-gray-800 w-48 rounded-lg shadow-lg">
+          <div className="absolute top-14 left-4 bg-gray-400 bg-opacity-75 text-gray-800 w-48 rounded-lg shadow-lg">
             <ul className="flex flex-col space-y-4 p-4">
               <li className="hover:bg-gray-500 hover:text-black rounded-md transition duration-300">
                 <Link to="/" className="block p-2">

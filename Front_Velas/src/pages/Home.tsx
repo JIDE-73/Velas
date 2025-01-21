@@ -1,6 +1,6 @@
 import { Flame, Leaf, Sparkles } from "lucide-react";
-import Hero from "../components/Hero";
-import CategoryCard from "../components/CategoryCard";
+import Hero from "../components/Banner";
+import CategoryCard from "../components/PresentCard";
 
 export default function Home() {
   return (

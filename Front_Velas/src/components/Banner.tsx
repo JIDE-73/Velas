@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="relative h-screen">
@@ -21,9 +23,11 @@ const Hero = () => {
           </p>
           <button
             className="bg-white text-neutral-900 px-8 py-3 rounded-full text-lg font-medium 
-            hover:bg-neutral-100 transition-colors duration-300"
+            hover:bg-gray-500 transition-colors duration-300 animate-pulse"
           >
+            <Link to="/products" className="block p-2">
             Explorar Colección
+            </Link>
           </button>
         </div>
       </div>
