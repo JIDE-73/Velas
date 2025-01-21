@@ -4,38 +4,12 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-playfair text-xl mb-4">Luminara</h3>
             <p className="text-neutral-400">
               Iluminando momentos especiales con velas artesanales únicas.
             </p>
-          </div>
-
-          <div>
-            <h4 className="font-medium mb-4">Enlaces rápidos</h4>
-            <ul className="space-y-2 text-neutral-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Inicio
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Galería
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Personalización
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Contacto
-                </a>
-              </li>
-            </ul>
           </div>
 
           <div>
@@ -72,14 +46,16 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-neutral-800 mt-8 pt-8 text-center text-neutral-400">
-          <p>&copy; 2024 Luminara. Todos los derechos reservados.</p>
+          <p>&copy; 2024 Brotes de Luz. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
   );
 };
+
 /*
 Desarrollado por Jimenez Delgado Leonardo Sebastian
 https://github.com/JIDE-73
 */
+
 export default Footer;
