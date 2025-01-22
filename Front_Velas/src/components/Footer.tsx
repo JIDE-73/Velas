@@ -1,8 +1,9 @@
 import { Instagram, Facebook, Mail, Phone } from "lucide-react";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white py-12">
+    <footer id="bottom" className="bg-neutral-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
@@ -40,6 +41,11 @@ const Footer = () => {
                 className="text-neutral-400 hover:text-white transition-colors"
               >
                 <Facebook size={24} />
+              </a>
+              <a
+              href="https://api.whatsapp.com/send?phone=526642221525"
+              className="text-neutral-400 hover:text-white transition-colors">
+                <FaWhatsapp size={24} />
               </a>
             </div>
           </div>

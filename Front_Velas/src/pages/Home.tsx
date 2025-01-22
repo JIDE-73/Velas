@@ -4,7 +4,7 @@ import CategoryCard from "../components/PresentCard";
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-shadow-md">
       <Hero />
 
       {/* Introduction Section */}
@@ -14,14 +14,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-playfair mb-6 text-[#FFFF00]">
               Iluminando momentos especiales
             </h2>
-            <p className="text-gray-300 leading-relaxed">
-              En Luminara, creamos velas únicas con ingredientes naturales,
+            <p className="text-gray-200 leading-relaxed">
+              En Brotes de luz, creamos velas únicas con ingredientes naturales,
               sostenibles y diseños hechos a mano. Cada pieza es una obra de
               arte que combina belleza y fragancia para crear ambientes
               inolvidables.
             </p>
           </div>
-          <div className="md:w-1/2">
+          <div className="hover:scale-105 md:w-1/2">
             <img
               src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&q=80"
               alt="Artesana trabajando en velas"
@@ -32,12 +32,12 @@ export default function Home() {
       </section>
 
       {/* Categories Section */}
-      <section className="bg-neutral-100 py-16 md:py-24">
+      <section className="bg-gray-400 bg-opacity-75 py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-playfair text-center mb-12">
+          <h2 className="text-3xl text-[#FFFF00] md:text-4xl font-playfair text-center mb-12">
             Nuestros valores
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 ">
             <CategoryCard
               icon={<Leaf className="w-8 h-8" />}
               title="Sostenibilidad"

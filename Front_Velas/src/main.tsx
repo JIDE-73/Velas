@@ -26,7 +26,7 @@ const ParticlesBackground = () => {
           value: "#3D0066", // Color de fondo para las partículas
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 60,
       interactivity: {
         events: {
           onClick: {
@@ -40,10 +40,10 @@ const ParticlesBackground = () => {
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 0,
           },
           repulse: {
-            distance: 200,
+            distance: 100,
             duration: 0.4,
           },
         },
@@ -54,9 +54,9 @@ const ParticlesBackground = () => {
         },
         links: {
           color: "#98FF98",
-          distance: 150,
-          enable: true,
-          opacity: 0.5,
+          distance: 50,
+          enable: false,
+          opacity: 1,
           width: 1,
         },
         move: {
@@ -73,16 +73,16 @@ const ParticlesBackground = () => {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 50,
         },
         opacity: {
-          value: 0.5,
+          value: 0.40,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 25, max: 150 },
         },
       },
       detectRetina: true,
@@ -91,17 +91,10 @@ const ParticlesBackground = () => {
   );
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: -1,
-      }}
-    >
-      {init && <Particles id="tsparticles" options={options} />}
+    <div className="fixed top-0 left-0 w-full h-full z-[-1] blur-sm">
+      <div className="w-full h-full blur-sm">
+        {init && <Particles id="tsparticles" options={options} />}
+      </div>
     </div>
   );
 };
