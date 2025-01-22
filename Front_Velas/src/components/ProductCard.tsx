@@ -30,23 +30,26 @@ const ProductCard: React.FC<Props> = ({ product, onAddToCart }) => {
         ${product.price.toFixed(2)}
       </p>
       <p className="text-sm text-black">Tamaño: {product.size}</p>
-      <div className="flex flex-row gap-4">
+
+      <div className="flex flex-wrap items-center justify-between gap-2 mt-2">
         <button
-          className="mt-4 flex items-center gap-4 bg-orange-400 text-primary text-gray-900 py-2 px-4 rounded-lg shadow-xl hover:bg-yellow-500 transition hover:text-black"
+          className="flex-1 flex items-center gap-2 bg-orange-400 text-gray-900 py-2 px-4 rounded-lg shadow-xl hover:bg-yellow-500 transition hover:text-black"
           onClick={() => onAddToCart(product)}
         >
           <ShoppingCart size={20} />
-          Añadir al carrito
+          <span className="text-center w-full">Añadir +</span>
         </button>
+
         <button
-          className="mt-4 flex items-center gap-4 bg-orange-400 text-primary text-gray-900 py-2 px-4 rounded-lg shadow-xl hover:bg-yellow-500 transition hover:text-black"
+          className="flex-1 flex items-center gap-2 bg-orange-400 text-gray-900 py-2 px-4 rounded-lg shadow-xl hover:bg-yellow-500 transition hover:text-black"
           onClick={() => onAddToCart(product)}
         >
           <FaList size={20} />
-          Opciones
+          <span className="text-center w-full">Selecciona</span>
         </button>
+
         <button
-          className="mt-4 flex items-center gap-4 bg-orange-400 text-primary text-gray-900 py-2 px-4 rounded-lg shadow-xl hover:bg-yellow-500 transition hover:text-black hover:scale-125"
+          className="flex items-center justify-center bg-orange-400 text-gray-900 py-2 px-4 rounded-lg shadow-xl hover:bg-yellow-500 transition hover:text-black"
           onClick={handleIconClick}
         >
           <Heart
