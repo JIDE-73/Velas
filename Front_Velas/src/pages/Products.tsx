@@ -12,7 +12,7 @@ const Products = () => {
     const timer = setTimeout(() => {
       // Muestra la alerta con SweetAlert2 después del delay
       Swal.fire({
-        title: "¡Tratos directos con la artesana!",
+        title: "¡Tratos directos con la artista!",
         text: "¿Quieres saber mas?",
         icon: "info", // Tipo de alerta
         showCancelButton: true, // Muestra el botón de Cancelar
@@ -25,15 +25,13 @@ const Products = () => {
           if (footer) {
             footer.scrollIntoView(); // Desplaza directamente al footer
           }
+        } else if (result.isDismissed) {
+          Swal.fire("¡No olvides seguirnos en redes!", "Brotes de luz", "success");
         }
-
-        // else if (result.isDismissed) {
-        //   Swal.fire("¡Está bien!", "Gracias por tu tiempo", "info");
-        // }
       });
-    }, 1000);
+    }, 5000);
 
-    return () => clearTimeout(timer); // Limpiar el timer si el componente se desmonta
+    return () => clearTimeout(timer);
   }, []);
 
   return (

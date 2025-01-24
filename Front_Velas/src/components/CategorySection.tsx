@@ -6,7 +6,14 @@ interface CategorySelectorProps {
 
 const CategorySelector = ({ onSelectCategory }: CategorySelectorProps) => {
   const [isVisible, setIsVisible] = useState(false); // Controla si la lista está visible
-  const categories = ["Todas", "Aromática", "Escultura", "Temporada"];
+  const categories = [
+    "Todas",
+    "Molde",
+    "Recipiente",
+    "Pintadas a mano",
+    "Ramos",
+    "Temporada",
+  ];
 
   // Toggle visibility de la lista
   const toggleVisibility = () => {

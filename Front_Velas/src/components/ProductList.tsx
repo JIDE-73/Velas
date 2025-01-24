@@ -36,10 +36,10 @@ const ProductList = ({ selectedCategory }: ProductListProps) => {
         </>
       ) : (
         <>
-          <h2 className="text-2xl font-bold text-[#FFFF00] mb-4">Aromáticas</h2>
+          <h2 className="text-2xl font-bold text-[#FFFF00] mb-4">Moldes</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {products
-              .filter((product) => product.category === "Aromática")
+              .filter((product) => product.category === "Molde")
               .map((product) => (
                 <ProductCard
                   key={product.id}
@@ -50,11 +50,11 @@ const ProductList = ({ selectedCategory }: ProductListProps) => {
           </div>
 
           <h2 className="text-2xl font-bold text-[#FFFF00] mt-8 mb-4">
-            Esculturas
+            Recipientes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {products
-              .filter((product) => product.category === "Escultura")
+              .filter((product) => product.category === "Recipiente")
               .map((product) => (
                 <ProductCard
                   key={product.id}
@@ -65,8 +65,36 @@ const ProductList = ({ selectedCategory }: ProductListProps) => {
           </div>
 
           <h2 className="text-2xl font-bold text-[#FFFF00] mt-8 mb-4">
-            Temporada
+            Pintadas a mano
           </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {products
+              .filter((product) => product.category === "Pintadas a mano")
+              .map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  onAddToCart={handleAddToCart}
+                />
+              ))}
+          </div>
+
+          <h2 className="text-2xl font-bold text-[#FFFF00] mt-8 mb-4">
+          Ramos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {products
+              .filter((product) => product.category === "Ramos")
+              .map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  onAddToCart={handleAddToCart}
+                />
+              ))}
+          </div>
+
+          <h2 className="text-2xl font-bold text-[#FFFF00] mt-8 mb-4">Temporada</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {products
               .filter((product) => product.category === "Temporada")
