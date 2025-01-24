@@ -12,7 +12,25 @@ const artistInfo = {
 
 const About = () => {
   return (
-    <div className="container mx-auto p-8 text-shadow-md">
+    <div id="about" className="container mx-auto p-8 text-shadow-md">
+      <div className="text-center mb-16 text-[#FFFF00]">
+        <h1 className="text-4xl font-bold animate-bounce">
+          Artista detras del proyecto
+        </h1>
+        <div className="mt-8">
+          <img
+            src={artistInfo.photo}
+            alt={artistInfo.name}
+            className="w-72 h-72 object-cover rounded-full mx-auto mb-4 hover:scale-105 transition-all"
+          />
+          <h2 className="text-2xl font-semibold">{artistInfo.name}</h2>
+          <p className="text-lg mt-4 text-white">
+            {artistInfo.academicBackground}
+          </p>
+          <p className="text-lg text-white mt-4">{artistInfo.description}</p>
+        </div>
+      </div>
+
       {/* Sección de historia del proyecto */}
       <div className="text-center mb-16 text-[#FFFF00]">
         <h1 className="text-5xl font-bold mb-6 animate-bounce">
@@ -53,23 +71,6 @@ const About = () => {
           ¿Qué aprendizajes te ha dejado esta experiencia?
         </h3>
         <p className="text-xl text-white mt-4">hola</p>
-      </div>
-      <div className="text-center mb-16 text-[#FFFF00]">
-        <h1 className="text-4xl font-bold animate-bounce">
-          Artista detras del proyecto
-        </h1>
-        <div className="mt-8">
-          <img
-            src={artistInfo.photo}
-            alt={artistInfo.name}
-            className="w-72 h-72 object-cover rounded-full mx-auto mb-4 hover:scale-105 transition-all"
-          />
-          <h2 className="text-2xl font-semibold">{artistInfo.name}</h2>
-          <p className="text-lg mt-4 text-white">
-            {artistInfo.academicBackground}
-          </p>
-          <p className="text-lg text-white mt-4">{artistInfo.description}</p>
-        </div>
       </div>
 
       {/* Obras del Artista */}

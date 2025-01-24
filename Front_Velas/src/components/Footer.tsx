@@ -1,5 +1,5 @@
-import { Instagram, Facebook, Mail, Phone } from "lucide-react";
-import { FaWhatsapp } from 'react-icons/fa';
+import { Instagram, Facebook, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,7 +21,12 @@ const Footer = () => {
                 info@luminara.com
               </p>
               <p className="flex items-center gap-2">
-                <Phone size={16} />
+                <a
+                  href="https://api.whatsapp.com/send?phone=526642221525"
+                  className="text-neutral-400 hover:text-white transition-colors"
+                >
+                  <FaWhatsapp size={18} />
+                </a>
                 +34 600 000 000
               </p>
             </div>
@@ -41,11 +46,6 @@ const Footer = () => {
                 className="text-neutral-400 hover:text-white transition-colors"
               >
                 <Facebook size={24} />
-              </a>
-              <a
-              href="https://api.whatsapp.com/send?phone=526642221525"
-              className="text-neutral-400 hover:text-white transition-colors">
-                <FaWhatsapp size={24} />
               </a>
             </div>
           </div>

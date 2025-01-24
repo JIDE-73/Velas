@@ -26,7 +26,7 @@ const ProductCard: React.FC<Props> = ({ product, onAddToCart }) => {
         {product.name}
       </h3>
       <p className="text-accent mt-2 text-white">{product.description}</p>
-      <p className="text-accent mt-2 text-gray-500">
+      <p className="text-accent mt-2 text-gray-300">
         ${product.price.toFixed(2)}
       </p>
       <p className="text-sm text-black">Tamaño: {product.size}</p>
@@ -37,7 +37,7 @@ const ProductCard: React.FC<Props> = ({ product, onAddToCart }) => {
           onClick={() => onAddToCart(product)}
         >
           <ShoppingCart size={20} />
-          <span className="text-center w-full">Añadir +</span>
+          <span className="text-center w-full">Añadir</span>
         </button>
 
         <button
@@ -45,11 +45,11 @@ const ProductCard: React.FC<Props> = ({ product, onAddToCart }) => {
           onClick={() => onAddToCart(product)}
         >
           <FaList size={20} />
-          <span className="text-center w-full">Selecciona</span>
+          <span className="text-center w-full">Más</span>
         </button>
 
         <button
-          className="flex items-center justify-center bg-orange-400 text-gray-900 py-2 px-4 rounded-lg shadow-xl hover:bg-yellow-500 transition hover:text-black"
+          className="flex items-center justify-center bg-orange-400 text-gray-900 py-2 px-2 rounded-full shadow-xl hover:bg-yellow-500 transition hover:text-black"
           onClick={handleIconClick}
         >
           <Heart
