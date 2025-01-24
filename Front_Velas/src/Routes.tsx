@@ -8,7 +8,9 @@ import Footer from "./components/Footer";
 function AppRoutes() {
   return (
     <Router basename="/Velas/">
-      <Navbar />
+      {" "}
+      {/* Configura la base para GitHub Pages */}
+      <Navbar /> {/* Menú fijo en la parte superior */}
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
