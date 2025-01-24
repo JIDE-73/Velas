@@ -7,11 +7,11 @@ import Footer from "./components/Footer";
 
 function AppRoutes() {
   return (
-    <Router basename="/Velas/">
+    <Router>
       <Navbar />
       <div className="min-h-screen">
         <Routes>
-          <Route path="/Velas/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<h2>Página no encontrada</h2>} />
